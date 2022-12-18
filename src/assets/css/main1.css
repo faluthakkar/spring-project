@@ -1046,13 +1046,16 @@ font-size: 35px;
     margin-bottom: 10px;
 }
 
+
+
+
 .primary-btn {
     position: relative;
     left: 0px;
     display: inline-block;
     overflow: hidden;
-    background: #7b0311;
-    color: #fff !important;
+    background: #dde8ec;
+    color: #735a5a !important;
     padding-right: 60px;
 }
 
@@ -1212,7 +1215,7 @@ header .logo {
 
 /* contact page*/
 .contact-us-area .contact-form {
-    float: left;
+    float: none;
     width: 50%;
     margin-bottom: 70px;
 }

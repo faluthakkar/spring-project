@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Electrcity Management System ">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Electrcity Management System</title>
+    
+    
+    <style type="text/css">
+      .img-fluid1{
+        max-width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+    
+ </head>
+<body>
+    <header>
+        <section class="logo">
+               <img src="assets/images/logo.jpg" alt="logo">
+             </section>
+             <nav  class="topnav" id="myTopnav">
+               <ul>
+                 <li>
+                 <a href="/">HOME</a>
+                 </li>
+       
+                 
+                 <li class="sub-menu">
+                   <a href="#" >OUR SERVICES</a>
+                   <ul>
+                      <li><a onclick="generateBillByConnectionId(bill.id,bill.newReading) ">GENERATE CONSUMER BILL</a></li>
+                       <li><a href="production.html">DISPLAY ALL BILLS</a></li>
+                     <li><a href="corporate-events.html">DISPLAY BILL BY CONSUMER ID</a></li>
+                     <li><a href="social-events.html">DISPLAY BILL BY CITY AND AREA</a></li>
+                     <li><a href="venues.html">DISPLAY BILL BY MONTH AND YEAR</a></li>
+                    
+                    
+                   </ul>
+                 </li>
+       
+                 
+               <li>
+                 <a href="contact-us.html">CONTACT US</a>
+               </li>
+                   <li>
+                       <a href="Login.php">LOGIN</a>
+                   </li>
+         </ul>
+       </nav>
+                 
+        <div class="menu-toogle" onclick="myFunction()" ><i class="fa fa-bars" aria-hidden="true"></i>
+        </div>                             
+       </header>
+<main>
+  <br>
+<div class="rel"></div>
+<div class="breadcrumb_outer hidden-xs">
+<div class="container">
+<nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+       <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Bills Of All Consumers </li>
+    </ul>
+</nav>
+</div>
+</div>
+<div class="off_white">
+
+<div class="mid_area">
+    <div class="pro_box">
+                <table class="table table-stripped">
+                <thead class="thead-light">
+                    <tr>
+                    <th>BillId</th>
+                    <th>DateTime</th>
+                    <th>OldReading</th>
+                    <th>NewReading</th>
+                    <th>BilledUnits</th>
+                    <th>Total</th>
+                    <th>ConsumerId</th>
+                    <th>ConnectionId</th>
+                    <th>ConnectionTypeId</th>
+                    </thead>
+            
+                    <tbody>
+                  <tr *ngFor = "let bill of bills">
+                  <td>{{bill.id}}</td>
+                 <td>{{bill.dateTime}}</td>
+                  <td>{{bill.oldReading}}</td>
+                      <td>{{bill.newReading}}</td>
+                 <td>{{bill.billedUnits}}</td>
+                  <td>{{bill.totalAmount}}</td>
+                      <td>{{bill.consumerId}}</td>
+                 <td>{{bill.connectionId}}</td>
+                  <td>{{bill.connectionTypeId}}</td>
+                </tr>
+    </tbody>
+	</table>
+</div>
+
+  <div class="clearfix"></div>
+</div>
+
+</div>
+</main>
+
+<footer>
+  
+    <section class="row2">
+    
+        <section class="Link wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: fadeInUp;">
+          <h4 class="desk_show">Quick Links</h4>
+          <section class="bb_bottom"></section>
+          <section class="ft_link">
+                    <a href="/" title="Home">Home</a><br>
+                               <a href="contact-us.html" title="Contact Us">Login</a><br>
+                    
+    
+          </section> <!-- ft-link ends here-->
+          
+        </section> <!--link ends here-->
+    
+        <section class="Services1 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+          <h4 class="desk_show">Our Services</h4>
+          <section class="bb_bottom"></section>
+          <section class="ft_link">
+                     <a href="../billgeneration.component.html" title="Wedding Management">Generate Bill</a><br>
+             <a href="corporate-events.html" title="Corporate Events">Display All Bills</a><br>
+                     <a href="social-events.html" title="Social Events">Display bill for ConsumerId</a><br>
+                     <a href="venues.html" title="Venues">Display bill for city and area </a><br> 
+                     <a href="production.html">Display bill for month and year</a><br>
+                             
+    
+                  </section>   <!-- ft-link ends here-->                      
+        </section> <!-- services ends here-->
+    
+        <section class="social wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInUp;">
+          <h4 class="desk_show">Follow Us On </h4>
+          <section class="bb_bottom"></section>
+          <section class="f_dd_box">
+                          <p class="ft-social">
+                                <a href="https://www.facebook.com/indiagramevents/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+                                <a href="https://twitter.com/IndiagramPvt" title="Twitter" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                                <a href="https://www.instagram.com/indiagramevents/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+    
+                          </p>
+    
+                      </section> <!--f_dd_box ends here-->
+    
+        </section> <!--social ends here-->
+    
+    
+        <section class="logo1 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+          
+                    <p class="ft-logo"><a href="/" title="Indiagram Events Pvt. Ltd"><img src="assets/images/logo.jpg" alt="Indiagram Events Pvt. Ltd" title="Indiagram Events Pvt. Ltd" class="image1"></a></p>
+    
+                    <p class="copy">Copyright © 2022, Electricity Management Corporation. <span>All Rights Reserved</span> </p>
+        </section> <!--logo1 ends here-->
+    </section> <!--row ends heree-->   
+</footer>
+
+</body>
+</html>
+
