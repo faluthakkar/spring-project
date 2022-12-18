@@ -87,9 +87,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              
+              "src/styles.css",
+              "assets/css/owl.theme.default.min.css",
+              "assets/css/animate.css",
+              "assets/css/main1.css",
+              "assets/css/owl.carousel.css",
+              "assets/css/owl.theme.default.css"
+
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/custom.js"
+             
+            ]
           }
         }
       }
