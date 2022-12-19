@@ -16,7 +16,12 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 //import ReactiveFormsModule here
 import { ReactiveFormsModule } from '@angular/forms';
-import { BillListComponent } from './bill-list/bill-list.component';;
+import { BillListComponent } from './bill-list/bill-list.component';
+import { BillbyidComponent } from './billbyid/billbyid.component';import { ConsumerDeleteComponent } from './consumer/consumer-delete/consumer-delete.component';
+import { ConsumerSaveComponent } from './consumer/consumer-save/consumer-save.component';
+import { ConsumerUpdateComponent } from './consumer/consumer-update/consumer-update.component';
+import { AddressSaveComponent } from './address/address-save/address-save.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { BillListComponent } from './bill-list/bill-list.component';;
     AddressListComponent,
     NavbarComponent,
     BillgenerationComponent,
-    BillListComponent
+    BillListComponent,
+    BillbyidComponent,
+    ConsumerSaveComponent,
+    ConsumerUpdateComponent,
+    ConsumerDeleteComponent,
+    AddressSaveComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +43,7 @@ import { BillListComponent } from './bill-list/bill-list.component';;
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

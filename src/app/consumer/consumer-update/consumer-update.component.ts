@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./consumer-update.component.css']
 })
 export class ConsumerUpdateComponent  implements OnInit{
-  [x: string]: any;
+
 
   consumers!:Consumer[];
   consumer!:Consumer;

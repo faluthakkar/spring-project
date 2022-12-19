@@ -14,15 +14,16 @@ import { BillService } from '../bill.service';
 export class BillgenerationComponent  {
   bill!:Bill;
 
+billList:Bill[]=[];
   constructor( private billService:BillService, private route: ActivatedRoute,
     private router: Router) { 
-      this.bill=new Bill();
+      //this.billService.generateBillByConnectionId().subscribe( bill=>this.bill=bill);
     }
 
-onSubmit(){
-  this.billService.generateBillByConnectionId(this.bill.id,this.bill.newReading).subscribe(
-    result =>this.gotoBillList());
-}
+//onSubmit(){
+ // this.billService.generateBillByConnectionId(id:Number,newReading:Number).subscribe(
+ //  result =>this.gotoBillList());
+//}
 
 gotoBillList(){
   this.router.navigate(['/bill']);

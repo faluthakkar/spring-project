@@ -57,9 +57,12 @@
 </nav>
           
  <div class="menu-toogle" onclick="myFunction()" ><i class="fa fa-bars" aria-hidden="true"></i>
- </div>                             
+ </div>         
+                
 </header>
+
 <main>
+   
     <div class="rel"></div>
   
   <div class="breadcrumb_outer hidden-xs">
@@ -67,7 +70,7 @@
   <nav aria-label="breadcrumb">
       <ul class="breadcrumb">
          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Generate Bill By Consumer Id</li>
+          <li class="breadcrumb-item active" aria-current="page">Generate Bill By Id</li>
       </ul>
   </nav>
   </div>
@@ -77,13 +80,9 @@
   
 
   <div class=" contact-form wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
-      <form  >      <!--(ngSubmit) = "onSubmit()"-->
-  <div class="form-group">  Enter Consumer Id :</div>
-  <div class="form-group "> <input type="text" name="id" required placeholder="Consumer Id*" class="form-control"  [(ngModel)] = "bill.id" ></div>
-           
-    <div class="form-group">   Enter Current Reading :</div>
-  <div class="form-group "> <input type="text"   name="newReading" required placeholder="Reading*" class="form-control"  [(ngModel)] = "bill.newReading"  ></div>
-  
+      <form  (ngSubmit) = "onSubmit()">     
+  <div class="form-group">  Enter Consumer First Name :</div>
+  <div class="form-group "> <input type="text" name="text"   class="form-control" [(ngModel)] = 'bill.id'   ></div>
   <div class="form-group "> <button type="submit"  value="submit" name="submit" class="primary-btn hvr-bounce-to-left" ><span class="btn-text">Submit</span> <strong class="icon"><span class="f-icon flaticon-letter110"></span></strong></button>
   </div>
  </form>

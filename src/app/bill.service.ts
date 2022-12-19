@@ -8,23 +8,28 @@ import { Bill } from './bill';
 })
 export class BillService {
 
- private baseURL:string;
+ 
 
-  constructor(private httpClient: HttpClient) {
-   this.baseURL = 'http://localhost:8080/bill';
+
+  constructor(private http: HttpClient) {
   }
 
 public findAll():
 Observable<Bill[]>{
-  return this.httpClient.get<Bill[]>(this.baseURL);
+  return this.http.get<Bill[]>("http://localhost:8080/bill");
 }
 
-public generateBillByConnectionId(id:number,newReading:number){
-  return this.httpClient.put(this.baseURL+id,newReading)
+
+public getById(id:number):Observable<Bill>{
+  return this.http.get<Bill>("http://localhost:8080/bill/" + id);
+}
+
+
+
+}
+
+/*public generateBillByConnectionId() :
+{
+  return this.http.put("http://localhost:8080/bill/id/newReading");
  
-}
-
-}
-
-
-
+}*/

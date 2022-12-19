@@ -1,24 +1,62 @@
-<br>
-<br>
-<h2> Address List</h2>
-<br>
-<br>
-<table class="table table-stripped">
-<thead class="thead-light">
-    <tr>
-        <th>Address Id</th>
-        <th>Area</th>
-        <th>City</th>
-    </tr>
-</thead>
-<tbody>
-    <tr *ngFor = "let address of address">
-        <td>{{address.id}}</td>
-        <td>{{address.area}}</td>
-        <td>{{address.city}}</td>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Electrcity Management System ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Electrcity Management System</title>
+    <style type="text/css">
+      .img-fluid1{
+        max-width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+    
+     </head>
+    <body>
+<main>
+  <br>
+<div class="rel"></div>
+<div class="breadcrumb_outer hidden-xs">
+<div class="container">
+<nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+       <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Address Of All Consumers </li>
+    </ul>
+</nav>
+</div>
+</div>
+<div class="off_white">
 
-    </tr>
-</tbody>
+<div class="mid_area">
+    <div class="pro_box">
+                <table class="table table-stripped">
+                <thead class="thead-light">
+                    <tr>
+                    <th>Address Id</th>
+                    <th>Area </th>
+                    <th>City</th>
+                    </thead>
+            
+                    <tbody>
+                  <tr *ngFor = " let address of address">
+                    <td>{{address.id}}</td>
+                    <td>{{address.area}}</td>
+                    <td>{{address.city}}</td>
+                </tr>
+    </tbody>
+	</table>
+</div>
 
+  <div class="clearfix"></div>
+</div>
 
-</table>
+</div>
+</main>
+</body>
+</html>
