@@ -21,6 +21,7 @@ import { BillbyidComponent } from './billbyid/billbyid.component';import { Consu
 import { ConsumerSaveComponent } from './consumer/consumer-save/consumer-save.component';
 import { ConsumerUpdateComponent } from './consumer/consumer-update/consumer-update.component';
 import { AddressSaveComponent } from './address/address-save/address-save.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AddressSaveComponent } from './address/address-save/address-save.compon
     ConsumerSaveComponent,
     ConsumerUpdateComponent,
     ConsumerDeleteComponent,
-    AddressSaveComponent
+    AddressSaveComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
