@@ -22,6 +22,7 @@ import { ConsumerSaveComponent } from './consumer/consumer-save/consumer-save.co
 import { ConsumerUpdateComponent } from './consumer/consumer-update/consumer-update.component';
 import { AddressSaveComponent } from './address/address-save/address-save.component';
 import { LoginComponent } from './login/login.component';
+import { AddressUpdateComponent } from './address/address-update/address-update.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { LoginComponent } from './login/login.component';
     ConsumerUpdateComponent,
     ConsumerDeleteComponent,
     AddressSaveComponent,
-    LoginComponent
+    LoginComponent,
+    AddressUpdateComponent
   ],
   imports: [
     BrowserModule,

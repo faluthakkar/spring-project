@@ -38,20 +38,19 @@
                 <table class="table table-stripped">
                 <thead class="thead-light">
                     <tr>
-                    <th>Address Id</th>
-                    <th>Area </th>
-                    <th>City</th>
+                    <th>Address Id</th>&nbsp;&nbsp;&nbsp;
+                    <th>Area </th>&nbsp;&nbsp;&nbsp;
+                    <th>City</th>&nbsp;&nbsp;&nbsp;
                     </thead>
             
                     <tbody>
                   <tr *ngFor = " let address of address">
-                    <td>{{address.id}}</td>
-  
-                    <td>{{address.area}}</td>
-                    <td>{{address.city}}</td>
-                    <button>Delete</button>
-                    
-                    <button>Update </button>
+                    <td>{{address.id}}</td>&nbsp;&nbsp;&nbsp;
+                    <td>{{address.area}}</td>&nbsp;&nbsp;&nbsp;
+                    <td>{{address.city}}</td>&nbsp;&nbsp;&nbsp;
+                   <!-- <button>Delete</button>-->
+                   <button  type = "submit" class="button-24" (click)="deleteAddress(address.id)" role="button">Delete</button>&nbsp;&nbsp;&nbsp;
+                   <button  [routerLink]="'/address-list/updateAddress/' + address.id" type = "submit" class="button-27" role="button">Update</button>&nbsp;&nbsp;&nbsp;
                 </tr>
     </tbody>
 	</table>
@@ -62,5 +61,6 @@
 
 </div>
 </main>
+<router-outlet></router-outlet>
 </body>
 </html>
